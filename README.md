@@ -1,0 +1,2 @@
+# paji-components
+somo components
