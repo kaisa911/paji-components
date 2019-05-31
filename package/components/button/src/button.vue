@@ -25,7 +25,6 @@ export default {
   computed: {},
   methods: {
     handleTypeStyle() {
-      console.log(this.$props.type);
       if (this.$props.type === "primary") {
         return "primary";
       } else if (this.$props.type === "submit") {
