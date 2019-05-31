@@ -1,0 +1,19 @@
+{
+  "name": "paji-components",
+  "version": "0.0.22",
+  "description": "some components",
+  "main": "package/index.js",
+  "scripts": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaisa911/paji-components.git"
+  },
+  "author": "paji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kaisa911/paji-components/issues"
+  },
+  "homepage": "https://github.com/kaisa911/paji-components#readme"
+}
