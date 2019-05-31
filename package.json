@@ -1,6 +1,6 @@
 {
   "name": "paji-components",
-  "version": "0.0.22",
+  "version": "0.0.23",
   "description": "some components",
   "main": "package/index.js",
   "scripts": {},
