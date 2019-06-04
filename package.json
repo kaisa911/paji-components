@@ -1,16 +1,18 @@
 {
   "name": "paji-components",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "some components",
   "main": "package/index.js",
   "scripts": {},
-  "dependencies": {},
-  "devDependencies": {},
+  "keywords": [
+    "vue",
+    "JavaScript"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kaisa911/paji-components.git"
   },
-  "author": "paji",
+  "author": "bufan.li911@gmail.com",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kaisa911/paji-components/issues"

@@ -1,7 +1,7 @@
 <template>
   <div
-    :class="['button', handleTypeStyle() ,disabled ? 'disabled' : '' ]"
-    @click="$emit('click')"
+    :class="['button', handleTypeStyle(), handleButtonSize(), disabled ? 'disabled' : '' ]"
+    @click="clickFunc"
     :disabled="disabled"
     :type="type"
   >
@@ -20,6 +20,11 @@ export default {
       type: String,
       required: false,
       default: "primary"
+    },
+    size: {
+      type: String,
+      required: false,
+      default: "default"
     }
   },
   computed: {},
@@ -32,6 +37,18 @@ export default {
       } else if (this.$props.type === "default") {
         return "";
       }
+    },
+    handleButtonSize() {
+      if (this.$props.size === "default") {
+        return "";
+      } else if (this.$props.size === "large") {
+        return "large";
+      } else if (this.$props.size === "small") {
+        return "small";
+      }
+    },
+    clickFunc(e) {
+      this.$emit("click", e);
     }
   },
   watch: {
@@ -59,6 +76,13 @@ export default {
 }
 .button:hover {
   box-shadow: 0px 5px 15px 0px rgba(57, 71, 95, 0.22);
+}
+
+.large {
+  min-width: 130px;
+}
+.small {
+  min-width: 56px;
 }
 
 .primary {
